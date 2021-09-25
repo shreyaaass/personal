@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+.items ul {
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  font-family: "blanka";
+  letter-spacing: 2px;
+  color: #5e4604;
+  font-size: 1.75rem;
+}
+.items ul li {
+  padding: 20px;
+  text-decoration: none;
+  color: bisque;
+  list-style: none;
+}
+.items ul li {
+  color: bisque;
+  text-decoration: none;
+}
+.items ul li a {
+  text-decoration: none;
+  color: #688d29;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 1.6em;
+}
+/* hero */
+.hero {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* about me */
+.about h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "blanka";
+  margin: 20px;
+}
+.me {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 80vh;
+}
+.name {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+.image {
+  grid-column: 2;
+  background-color: #c5e68d;
+  background-image: url(./images/withoutbackground.png);
+  background-size: cover;
+  background-position: center;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.text {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text p {
+  padding: 50px;
+  font-size: 1.4rem;
+  font-family: "roboto";
+  margin: 20px;
+}
+/* projects */
+.projects {
+  height: 100vh;
+}
+.projects h1 {
+  text-align: center;
+  font-family: "blanka";
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.slide-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.slide-col {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+.project-image img {
+  height: 10%;
+  width: 10%;
+}
+/* contact */
+.contact {
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.contact h1 {
+  text-align: center;
+  font-family: "blanka";
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+/* misc */
+.hidden {
+  opacity: 0;
+  transition: 0.3s;
+}
+.show {
+  opacity: 1;
+  transition: 1s;
+}
+/*card*/
+.card01 {
+  width: 400px;
+}
+.card1__content {
+  text-align: center;
+  position: relative;
+  padding: 7em;
+  transition: transform 3s;
+  background: rgb(51, 51, 51);
+  background-image: linear-gradient(#399854, #f4d448);
+  background-size: cover;
+  background-position: center;
+  transform-style: preserve-3d;
+}
+.card1__front,
+.card1__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  display: grid;
+  align-content: center;
+  grid-template-rows: 1fr 0.3fr;
+}
+.card01:hover .card1__content {
+  transform: rotateY(0.5turn);
+}
+.card1__title {
+  font-size: 3rem;
+  transform: translateZ(6rem);
+}
+.Intro {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.card1__back {
+  transform: rotateY(180deg);
+  background: rgb(51, 51, 51);
+  background-image: linear-gradient(#399854, #f4d448);
+  transform-style: preserve-3d;
+}
+.card1__body {
+  transform: translateZ(3rem);
+  grid-row: 1/2;
+  /* //transform-style: preserve-3d; */
+}
+.card1__front p {
+  transform: translateZ(60px);
+}
+.card1__back img,
+.card1__back img a,
+p {
+  height: 30px;
+  transform: translateZ(3rem);
+  /* //position: relative;
+  //bottom: -30px;
+  //transform-style: preserve-3d; */
+  padding: 3px;
+  grid-row: 2/3;
+}
+#cards h1 {
+  font-size: 4rem;
+}
+.icons img:hover {
+  box-shadow: rgba(32, 31, 31, 0.37);
+  transform: scale(1.2);
+}
+.contact {
+  color: #fff;
+}
+h1 {
+  color: #5e4604;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000;
+}
