@@ -241,7 +241,7 @@ slider
 .car {
   position: relative;
   height: 500px;
-  width: 80%;
+  width: 30%;
   margin: 50px auto;
 }
 .car_image {
@@ -253,7 +253,7 @@ slider
 .car_image img {
   height: 600px;
   width: 80%;
-  cursor:pointer;
+  cursor: pointer;
 }
 .car_containter {
   background-color: transparent;
@@ -322,7 +322,7 @@ slider
   width: 30px;
   transition: 0.5s;
 }
-.primary img:hover {
+.primary:hover {
   opacity: 0;
 }
 .car_image {
