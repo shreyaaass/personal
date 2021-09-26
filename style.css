@@ -91,7 +91,7 @@
 }
 /* projects */
 .projects {
-  height: 100vh;
+  height: 90vh;
 }
 .projects h1 {
   text-align: center;
@@ -222,6 +222,7 @@ p {
   box-shadow: rgba(32, 31, 31, 0.37);
   transform: scale(1.2);
 }
+
 .contact {
   color: #fff;
 }
@@ -233,4 +234,97 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 1000000;
+}
+/*
+slider
+*/
+.car {
+  position: relative;
+  height: 500px;
+  width: 80%;
+  margin: 50px auto;
+}
+.car_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+}
+.car_image img {
+  height: 600px;
+  width: 80%;
+}
+.car_containter {
+  background-color: transparent;
+  height: 100%;
+  position: relative;
+}
+.car_track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: transform 0.5s;
+  height: 100%;
+}
+.car_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* left: 0;
+  right: 0; */
+  width: 100%;
+}
+.car_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.car_button {
+  background-color: transparent;
+  border: 2px;
+  border-radius: 600px;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  font-weight: 1400;
+  cursor: pointer;
+}
+.button-left {
+  left: -4rem;
+  z-index: 1;
+}
+.button-right {
+  right: -4rem;
+}
+.car_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+.car_indicator {
+  border: 1px solid #333;
+  border-radius: 20px;
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+  box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.575);
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.show {
+  opacity: 1;
+}
+.car_indicator.current-slide {
+  width: 30px;
+  transition: 0.5s;
+}
+.primary:hover {
+  opacity: 0;
+}
+.car_image {
+  position: absolute;
+  transition: 0.5s;
 }
