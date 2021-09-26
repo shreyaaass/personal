@@ -322,7 +322,7 @@ slider
   width: 30px;
   transition: 0.5s;
 }
-.primary img:hover {
+.primary {
   opacity: 0;
 }
 .car_image {
